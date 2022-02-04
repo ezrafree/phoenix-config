@@ -1,0 +1,33 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "local"
+      }
+    ],
+    "curly": ["error", "multi-line"],
+    "eqeqeq": ["error", "always"],
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "object-shorthand": ["error", "always"],
+    "explicit-function-return-type": "off",
+    "prettier/prettier": ["error"]
+  },
+  "env": {
+    "browser": true
+  }
+}
