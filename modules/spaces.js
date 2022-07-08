@@ -5,8 +5,7 @@
 function moveToSpace(window, space, destSpace) {
   if (!window || !space || !destSpace) return
 
-  space.removeWindows([window])
-  destSpace.addWindows([window])
+  destSpace.moveWindows([window])
 
   window.focus()
 }
@@ -14,6 +13,8 @@ function moveToSpace(window, space, destSpace) {
 function moveToNextSpace() {
   var window = getCurrentWindow()
   if (!window) return
+
+  Phoenix.log('window:', window)
 
   const activeSpaceScreenHashes = Space.active()
     .screens()
@@ -35,9 +36,8 @@ function moveToNextSpace() {
       .map(space => space.hash())
     const firstSpace = screenSpaces[0]
 
-    Space.active().removeWindows([window])
     Space.all().map(space =>
-      space.hash() === firstSpace ? space.addWindows([window]) : false
+      space.hash() === firstSpace ? space.moveWindows([window]) : false
     )
   }
 
@@ -72,9 +72,8 @@ function moveToPreviousSpace() {
 
     const lastSpace = Math.max(...screenSpaces)
 
-    Space.active().removeWindows([window])
     Space.all().map(space =>
-      space.hash() === lastSpace ? space.addWindows([window]) : false
+      space.hash() === lastSpace ? space.moveWindows([window]) : false
     )
   }
 
