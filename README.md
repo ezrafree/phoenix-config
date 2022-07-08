@@ -114,7 +114,7 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 | Shortcut  | Description                           |
 | --------- | ------------------------------------- |
 | `⇪` + `q` | Move focused window to previous space |
-| `⇪` + `w` | Move focused window to next screen    |
+| `⇪` + `w` | Move focused window to next space    |
 
 > Please note: Uncheck "Automatically rearrange Spaces based on most recent use" in `System Preferences > Mission Control` to enable this feature.
 
