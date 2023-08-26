@@ -8,6 +8,7 @@ const HYPER_SHIFT = ['shift']
 const PHOENIX_DAEMON = false
 const PHOENIX_OPEN_AT_LOGIN = true
 
+// when using HYPER-SHIFT-X this will resize the current window to these pixels
 const WINDOW_WIDTH = 1440
 const WINDOW_HEIGHT = 900
 
@@ -23,8 +24,8 @@ const APP_SHORTCUT_1 = 'Google Chrome'
 const APP_SHORTCUT_2 = 'Visual Studio Code'
 const APP_SHORTCUT_3 = 'iTerm'
 const APP_SHORTCUT_4 = 'Slack'
-const APP_SHORTCUT_5 = ''
-const APP_SHORTCUT_6 = ''
+const APP_SHORTCUT_5 = 'Figma'
+const APP_SHORTCUT_6 = 'GIPHY Capture'
 
 // -----------------------------------------------------------------------------
 // Warning: this config has been built custom to my monitor configuration. Your
@@ -38,7 +39,7 @@ const APP_SHORTCUT_6 = ''
 // the same size / resolution / etc.
 const SKIP_BUILTIN_DISPLAY = false
 // Set the pixel width of your laptop's built-in display (default: 1792)
-const BUILTIN_DISPLAY_WIDTH = 1792
+const BUILTIN_DISPLAY_WIDTH = 1512
 // Set the pixel width of each of your external monitors (default: 2560)
 const EXTERNAL_DISPLAY_WIDTH = 2560
 // This option reverses the direction of the left/right arrow keys. When the
@@ -52,3 +53,11 @@ const REVERSE_LEFT_RIGHT_DIRECTION = false
 // see the logs by running the following command:
 // $ log stream --process Phoenix
 DEBUG_MODE = false
+
+// Screen resolution notes...
+/*
+
+    1512 x 982      14" Macbook Pro M2
+    1728 x 1117     16" Macbook Pro M2
+
+*/
