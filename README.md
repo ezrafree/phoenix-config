@@ -28,6 +28,8 @@ Create a `~/.config/phoenix/config/karabiner.json` and add the following content
 
 ## Install Instructions
 
+> Note: Whenever Phoenix is running and doesn't find a config, it will create an empty config file at `~/.phoenix.js`. Make sure Phoenix is not running when you clone this repo down, and if you find your config isn't taking effect, check to see if you have an empty file at `~/.phoenix.js`. If you do, make sure Phoenix isn't running, delete the file, and run Phoenix again. This should allow it to pick up your config at at `~/.config/phoenix`.
+
 Clone to your `~/.config/phoenix` directory
 
 ```sh
