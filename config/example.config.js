@@ -21,11 +21,12 @@ const QUIT_BLACKLIST = ['Finder']
 
 // set any of these to an empty string '' to disable
 const APP_SHORTCUT_1 = 'Google Chrome'
-const APP_SHORTCUT_2 = 'Visual Studio Code'
-const APP_SHORTCUT_3 = 'iTerm'
-const APP_SHORTCUT_4 = 'Slack'
+const APP_SHORTCUT_2 = 'Spotify'
+const APP_SHORTCUT_3 = 'Visual Studio Code'
+const APP_SHORTCUT_4 = 'iTerm'
 const APP_SHORTCUT_5 = 'Figma'
 const APP_SHORTCUT_6 = 'GIPHY Capture'
+// const APP_SHORTCUT_X = 'Slack'
 
 // -----------------------------------------------------------------------------
 // Warning: this config has been built custom to my monitor configuration. Your
