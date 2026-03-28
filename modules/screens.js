@@ -183,13 +183,17 @@ function focusAnotherScreen(window, targetScreen) {
   restoreMousePositionForWindow(targetWindow)
 }
 
+function getScreensSortedByX() {
+  return Screen.all().sort((a, b) => a.flippedVisibleFrame().x - b.flippedVisibleFrame().x)
+}
+
 function focusOnNextScreen() {
   var window = getCurrentWindow()
   if (!window) return
 
-  var currentScreen = window.screen()
-  if (!currentScreen) return
-  var targetScreen = currentScreen.next()
+  var screens = getScreensSortedByX()
+  var currentIndex = screens.findIndex(s => s === window.screen())
+  var targetScreen = screens[(currentIndex + 1) % screens.length]
 
   focusAnotherScreen(window, targetScreen)
 }
@@ -198,9 +202,9 @@ function focusOnPreviousScreen() {
   var window = getCurrentWindow()
   if (!window) return
 
-  var currentScreen = window.screen()
-  if (!currentScreen) return
-  var targetScreen = currentScreen.previous()
+  var screens = getScreensSortedByX()
+  var currentIndex = screens.findIndex(s => s === window.screen())
+  var targetScreen = screens[(currentIndex - 1 + screens.length) % screens.length]
 
   focusAnotherScreen(window, targetScreen)
 }
@@ -209,14 +213,17 @@ function moveToNextScreen() {
   var window = getCurrentWindow()
   if (!window) return
 
-  if (window.screen() === window.screen().next()) {
+  var screens = getScreensSortedByX()
+  if (screens.length === 1) {
     if (Space.active() !== Space.active().next()) {
       moveToSpace(window, Space.active(), Space.active().next())
     }
     return
   }
 
-  moveToScreen(window, window.screen().next(), false)
+  var currentIndex = screens.findIndex(s => s === window.screen())
+  var nextScreen = screens[(currentIndex + 1) % screens.length]
+  moveToScreen(window, nextScreen, false)
   restoreMousePositionForWindow(window)
   window.focus()
 }
@@ -225,14 +232,17 @@ function moveToPreviousScreen() {
   var window = getCurrentWindow()
   if (!window) return
 
-  if (window.screen() === window.screen().previous()) {
+  var screens = getScreensSortedByX()
+  if (screens.length === 1) {
     if (Space.active() !== Space.active().previous()) {
       moveToSpace(window, Space.active(), Space.active().previous())
     }
     return
   }
 
-  moveToScreen(window, window.screen().previous(), false)
+  var currentIndex = screens.findIndex(s => s === window.screen())
+  var prevScreen = screens[(currentIndex - 1 + screens.length) % screens.length]
+  moveToScreen(window, prevScreen, false)
   restoreMousePositionForWindow(window)
   window.focus()
 }

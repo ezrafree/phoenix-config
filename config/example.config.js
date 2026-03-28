@@ -43,11 +43,6 @@ const SKIP_BUILTIN_DISPLAY = false
 const BUILTIN_DISPLAY_WIDTH = 1512
 // Set the pixel width of each of your external monitors (default: 2560)
 const EXTERNAL_DISPLAY_WIDTH = 2560
-// This option reverses the direction of the left/right arrow keys. When the
-// system is rebooted, sometimes the direction of these arrow keys may be
-// reversed. This is either due to a bug in the code, or to the way macOS
-// returns the screens (still TBD).
-const REVERSE_LEFT_RIGHT_DIRECTION = false
 // -----------------------------------------------------------------------------
 
 // Enabling debug mode sends debugging information to the log messages. You can

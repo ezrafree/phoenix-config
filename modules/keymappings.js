@@ -43,12 +43,12 @@ Key.on('a', hyper, function () {
   focusOnPreviousScreen()
 })
 
-// Move current window to next screen
-Key.on(REVERSE_LEFT_RIGHT_DIRECTION ? 'left' : 'right', hyper, function () {
+// Move current window to next screen (right)
+Key.on('right', hyper, function () {
   moveToNextScreen()
 })
-// Move current window to previous screen
-Key.on(REVERSE_LEFT_RIGHT_DIRECTION ? 'right' : 'left', hyper, function () {
+// Move current window to previous screen (left)
+Key.on('left', hyper, function () {
   moveToPreviousScreen()
 })
 
