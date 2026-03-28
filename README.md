@@ -32,9 +32,15 @@ Create a `~/.config/phoenix/config/karabiner.json` and add the following content
 
 Clone to your `~/.config/phoenix` directory
 
+Over HTTPS:
+
 ```sh
 git clone https://github.com/ezrafree/phoenix-config ~/.config/phoenix
-# or
+```
+
+Or over SSH:
+
+```sh
 git clone git@github.com:ezrafree/phoenix-config.git ~/.config/phoenix
 ```
 
