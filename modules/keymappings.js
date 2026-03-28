@@ -52,18 +52,6 @@ Key.on('left', hyper, function () {
   moveToPreviousScreen()
 })
 
-// toggle moving windows to/from the built-in display
-if (SKIP_BUILTIN_DISPLAY) {
-  // Move current window to built-in display
-  Key.on('down', hyper, function () {
-    moveToAllNextScreens()
-  })
-  // Move current window to external monitors
-  Key.on('up', hyper, function () {
-    moveToAllPreviousScreens()
-  })
-}
-
 // Move current window to next space
 Key.on('w', hyper, function () {
   moveToNextSpace()
