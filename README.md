@@ -14,9 +14,7 @@ brew install --cask phoenix
 
 Allow Phoenix in your system preferences
 
-```none
-System Preferences > Security & Privacy > Accessibility
-```
+<kbd>System Preferences</kbd> &raquo; <kbd>Security & Privacy</kbd> &raquo; <kbd>Accessibility</kbd>
 
 ### Install Karabiner
 
