@@ -18,11 +18,13 @@ Allow Phoenix in your system preferences
 
 ### Install Karabiner
 
-Download and install Karabiner-Elements from [pqrs.org/osx/karabiner/](https://pqrs.org/osx/karabiner/)
+Download and install Karabiner-Elements:
 
-Create a `~/.config/phoenix/config/karabiner.json` and add the following contents:
+[https://karabiner-elements.pqrs.org/](https://karabiner-elements.pqrs.org/)
 
-[gist.github.com/ezrafree/06bee291bdcf69a542878dd0651715a1](https://gist.github.com/ezrafree/06bee291bdcf69a542878dd0651715a1)
+Install my Karabiner-Elements configuration:
+
+[https://github.com/ezrafree/karabiner-config](https://github.com/ezrafree/karabiner-config)
 
 ## Install Instructions
 
