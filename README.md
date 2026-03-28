@@ -9,7 +9,7 @@ This is a fairly customized/modified version of [danshan/.phoenix.js](https://gi
 Install Phoenix
 
 ```sh
-brew cask install phoenix
+brew install --cask phoenix
 ```
 
 Allow Phoenix in your system preferences
