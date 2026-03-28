@@ -153,21 +153,6 @@ To quit an application, hold down `cmd` and hit `q` twice rapidly (within 250 mi
 >
 > If you like, you can also configure the double key interval in the `DOUBLE_KEY_INTERVAL` constant from the default of 250 milliseconds.
 
-## Skip Built-In Display
-
-This feature is still somewhat experimental and is not enabled by default. It skips the built-in display when moving a window across your external monitors (assuming they are side-by-side). It also enables using the up and down arrows to move windows between the built-in display and the external monitors.
-
-To enable it, set `SKIP_BUILTIN_DISPLAY` to `true` in the config and set the `BUILTIN_DISPLAY_WIDTH` and `EXTERNAL_DISPLAY_WIDTH` values.
-
-### Move Window to Built-In Display
-
-When you've enabled the `SKIP_BUILTIN_DISPLAY` feature, additional shortcuts are enabled that may be used to toggle moving a window between the built-in display and the external monitors.
-
-| Shortcut     | Description                                          |
-| ------------ | ---------------------------------------------------- |
-| `⇪` + `up`   | Send the focused window to the main external display |
-| `⇪` + `down` | Send the focused window to the built-in display      |
-
 ## Development
 
 For development purposes, you may optionally install the node modules to enable ESLint.
@@ -176,6 +161,3 @@ For development purposes, you may optionally install the node modules to enable 
 yarn
 ```
 
-## Known Issues
-
-If the computer was already booted up without external monitors connected and you then connect external monitors to it, the monitors will be in the reverse order. Currently, the only known solution is to reboot.
