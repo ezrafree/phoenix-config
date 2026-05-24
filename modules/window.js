@@ -94,15 +94,24 @@ function centerCurrentWindow() {
 }
 
 function setWindowCentral(window) {
+  var screenFrame = window.screen().flippedVisibleFrame()
+  var windowFrame = window.frame()
   window.setTopLeft({
-    x:
-      (window.screen().flippedVisibleFrame().width - window.size().width) / 2 +
-      window.screen().flippedVisibleFrame().x,
-    y:
-      (window.screen().flippedVisibleFrame().height - window.size().height) /
-        2 +
-      window.screen().flippedVisibleFrame().y,
+    x: (screenFrame.width - windowFrame.width) / 2 + screenFrame.x,
+    y: (screenFrame.height - windowFrame.height) / 2 + screenFrame.y,
   })
+  // var modal = new Modal()
+  // modal.origin = {
+  //   x: screenFrame.x + screenFrame.width / 2 - 200,
+  //   y: screenFrame.y + screenFrame.height / 2,
+  // }
+  // modal.duration = 8
+  // modal.text = [
+  //   'app: ' + window.app().name(),
+  //   'after: ' + JSON.stringify(window.frame()),
+  //   'screen: ' + JSON.stringify(screenFrame),
+  // ].join('\n')
+  // modal.show()
   heartbeatWindow(window)
 }
 
