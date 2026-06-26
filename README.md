@@ -85,16 +85,16 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 | --------------- | -------------------------------------- |
 | `⇪` + `e` | Move window to the top-left corner     |
 | `⇪` + `r` | Move window to the top-right corner    |
-| `⇪` + `d` | Move window to the bottom-left corner  |
-| `⇪` + `f` | Move window to the bottom-right corner |
+| `⇪` + `a` | Move window to the bottom-left corner  |
+| `⇪` + `s` | Move window to the bottom-right corner |
 
 ### Percentage Sides
 
 | Shortcut            | Description                                           |
 | ------------------- | ----------------------------------------------------- |
 | `⇪` + `[`           | Move window to left percentage of screen              |
-| `⇪` + `]`           | Move window to right percentage of screen             |
-| `⇪` + `shift` + `[` | Move window to opposite of left percentage of screen  |
+| `⇪` + `d`           | Move window to right percentage of screen             |
+| `⇪` + `fhift` + `[` | Move window to opposite of left percentage of screen  |
 | `⇪` + `shift` + `]` | Move window to opposite of right percentage of screen |
 
 ### Percentage Top/Bottom
@@ -141,8 +141,8 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 | Shortcut  | Description                           |
 | --------- | ------------------------------------- |
-| `⇪` + `q` | Move focused window to previous space |
-| `⇪` + `w` | Move focused window to next space     |
+| `⇪` + `e` | Move focused window to previous space |
+| `⇪` + `r` | Move focused window to next space     |
 
 > Please note: Uncheck "Automatically rearrange Spaces based on most recent use" in `System Preferences > Mission Control` to enable this feature.
 
@@ -150,8 +150,8 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 | Shortcut  | Description                         |
 | --------- | ----------------------------------- |
-| `⇪` + `a` | Move mouse focus to previous screen |
-| `⇪` + `s` | Move mouse focus to next screen     |
+| `⇪` + `d` | Move mouse focus to previous screen |
+| `⇪` + `f` | Move mouse focus to next screen     |
 
 ## Move Mouse Focus to Center of Screen
 

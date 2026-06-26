@@ -35,11 +35,11 @@ if (APP_SHORTCUT_6 && APP_SHORTCUT_6 !== '') {
 }
 
 // Focus mouse to next screen
-Key.on('s', hyper, function () {
+Key.on('d', hyper, function () {
   focusOnNextScreen()
 })
 // Focus mouse to previous screen
-Key.on('a', hyper, function () {
+Key.on('f', hyper, function () {
   focusOnPreviousScreen()
 })
 
@@ -53,11 +53,11 @@ Key.on('left', hyper, function () {
 })
 
 // Move current window to next space
-Key.on('w', hyper, function () {
+Key.on('r', hyper, function () {
   moveToNextSpace()
 })
 // Move current window to previous space
-Key.on('q', hyper, function () {
+Key.on('e', hyper, function () {
   moveToPreviousSpace()
 })
 
