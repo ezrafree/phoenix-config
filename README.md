@@ -137,7 +137,7 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 ### Move Window to Space
 
-> ⚠️ Not working...
+> ⚠️ Not working on desktop... possibly this only works when there's only one screen.
 
 | Shortcut  | Description                           |
 | --------- | ------------------------------------- |
