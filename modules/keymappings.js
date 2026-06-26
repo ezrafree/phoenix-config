@@ -108,11 +108,11 @@ Key.on('[', hyper, function () {
 Key.on(']', hyper, function () {
   layoutWindow(PERCENT_WIDTH_LEFT, 0, PERCENT_WIDTH_RIGHT, 1)
 })
-// Resize window to left percentage of screen
+// Resize window to left percentage of screen (reversed)
 Key.on('[', hyperShift, function () {
   layoutWindow(0, 0, PERCENT_WIDTH_RIGHT, 1)
 })
-// Resize window to right percentage of screen
+// Resize window to right percentage of screen (reversed)
 Key.on(']', hyperShift, function () {
   layoutWindow(PERCENT_WIDTH_RIGHT, 0, PERCENT_WIDTH_LEFT, 1)
 })
@@ -135,16 +135,16 @@ Key.on('.', hyperShift, function () {
 })
 
 // Resize window to quarter of screen
-Key.on('e', hyper, function () {
+Key.on('q', hyper, function () {
   layoutWindow(0, 0, 0.5, 0.5)
 })
-Key.on('r', hyper, function () {
+Key.on('w', hyper, function () {
   layoutWindow(0.5, 0, 0.5, 0.5)
 })
-Key.on('d', hyper, function () {
+Key.on('a', hyper, function () {
   layoutWindow(0, 0.5, 0.5, 0.5)
 })
-Key.on('f', hyper, function () {
+Key.on('s', hyper, function () {
   layoutWindow(0.5, 0.5, 0.5, 0.5)
 })
 

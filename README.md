@@ -153,6 +153,12 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 | `⇪` + `a` | Move mouse focus to previous screen |
 | `⇪` + `s` | Move mouse focus to next screen     |
 
+## Move Mouse Focus to Center of Screen
+
+| Shortcut                | Description                          |
+| ----------------------- | ------------------------------------ |
+| `⇪` + `shift` + `space` | Move mouse focus to center of screen |
+
 ### Focus Window in Current Screen
 
 | Shortcut              | Description                             |
