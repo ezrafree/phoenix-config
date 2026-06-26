@@ -117,6 +117,23 @@ Key.on(']', hyperShift, function () {
   layoutWindow(PERCENT_WIDTH_RIGHT, 0, PERCENT_WIDTH_LEFT, 1)
 })
 
+// Resize window to top percentage of screen
+Key.on(',', hyper, function () {
+  layoutWindow(0, 0, 1, PERCENT_HEIGHT_TOP)
+})
+// Resize window to bottom percentage of screen
+Key.on('.', hyper, function () {
+  layoutWindow(0, PERCENT_HEIGHT_TOP, 1, PERCENT_HEIGHT_BOTTOM)
+})
+// Resize window to top percentage of screen (reversed)
+Key.on(',', hyperShift, function () {
+  layoutWindow(0, 0, 1, PERCENT_HEIGHT_BOTTOM)
+})
+// Resize window to bottom percentage of screen (reversed)
+Key.on('.', hyperShift, function () {
+  layoutWindow(0, PERCENT_HEIGHT_BOTTOM, 1, PERCENT_HEIGHT_TOP)
+})
+
 // Resize window to quarter of screen
 Key.on('e', hyper, function () {
   layoutWindow(0, 0, 0.5, 0.5)
