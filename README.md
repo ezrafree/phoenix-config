@@ -83,10 +83,6 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 | Shortcut        | Description                            |
 | --------------- | -------------------------------------- |
-| `⇪` + `↑` + `←` | Move window to the top-left corner     |
-| `⇪` + `↑` + `→` | Move window to the top-right corner    |
-| `⇪` + `↓` + `←` | Move window to the bottom-left corner  |
-| `⇪` + `↓` + `→` | Move window to the bottom-right corner |
 | `⇪` + `e` | Move window to the top-left corner     |
 | `⇪` + `r` | Move window to the top-right corner    |
 | `⇪` + `d` | Move window to the bottom-left corner  |
@@ -110,20 +106,18 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 | `⇪` + `shift` + `<` | Move window to opposite of top percentage of screen    |
 | `⇪` + `shift` + `>` | Move window to opposite of bottom percentage of screen |
 
-### Expand
-
-> ⚠️ `⇪` + `space` doesn't toggle...it only expands. Is it supposed to actually toggle? I need to review the code.
+### Maximize Window
 
 | Shortcut      | Description                               |
 | ------------- | ----------------------------------------- |
-| `⇪` + `space` | Toggle window expansion to fill the space |
+| `⇪` + `space` | Maximize current window.   |
 
-### Resize
+### Resize Window
 
 | Shortcut  | Description                  |
 | --------- | ---------------------------- |
-| `⇪` + `-` | Center the window            |
-| `⇪` + `+` | Center and resize the window |
+| `⇪` + `-` | Make the window smaller      |
+| `⇪` + `+` | Make the window bigger.      |
 
 ### Center
 
@@ -172,6 +166,8 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 | `⇪` + `2` | Open app shortcut 2 |
 | `⇪` + `3` | Open app shortcut 3 |
 | `⇪` + `4` | Open app shortcut 4 |
+| `⇪` + `5` | Open app shortcut 5 |
+| `⇪` + `6` | Open app shortcut 6 |
 
 > You can configure which apps these shortcuts open in the config file. To disable any of them, just set it to an empty string.
 

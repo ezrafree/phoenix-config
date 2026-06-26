@@ -12,12 +12,13 @@ const PHOENIX_OPEN_AT_LOGIN = true
 const WINDOW_WIDTH = 1440
 const WINDOW_HEIGHT = 900
 
-const PERCENT_WIDTH_LEFT = 0.66
-const PERCENT_WIDTH_RIGHT = 0.33
+const PERCENT_WIDTH_LEFT = 0.6
+const PERCENT_WIDTH_RIGHT = 0.4
 
-const PERCENT_HEIGHT_TOP = 0.66
-const PERCENT_HEIGHT_BOTTOM = 0.33
+const PERCENT_HEIGHT_TOP = 0.7
+const PERCENT_HEIGHT_BOTTOM = 0.3
 
+// the number of milliseconds for double pressing a key
 const DOUBLE_KEY_INTERVAL = 250
 
 const QUIT_BLACKLIST = ['Finder']
