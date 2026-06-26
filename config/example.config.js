@@ -8,15 +8,15 @@ const HYPER_SHIFT = ['shift']
 const PHOENIX_DAEMON = false
 const PHOENIX_OPEN_AT_LOGIN = true
 
-// when using HYPER-SHIFT-X this will resize the current window to these pixels
+// when double-tapping HYPER-SHIFT-C this will resize the current window to these pixels
 const WINDOW_WIDTH = 1440
 const WINDOW_HEIGHT = 900
 
 const PERCENT_WIDTH_LEFT = 0.6
 const PERCENT_WIDTH_RIGHT = 0.4
 
-const PERCENT_HEIGHT_TOP = 0.7
-const PERCENT_HEIGHT_BOTTOM = 0.3
+const PERCENT_HEIGHT_TOP = 2 / 3
+const PERCENT_HEIGHT_BOTTOM = 1 / 3
 
 // the number of milliseconds for double pressing a key
 const DOUBLE_KEY_INTERVAL = 250
