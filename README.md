@@ -101,6 +101,15 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 | `⇪` + `shift` + `[` | Move window to opposite of left percentage of screen  |
 | `⇪` + `shift` + `]` | Move window to opposite of right percentage of screen |
 
+### Percentage Top/Bottom
+
+| Shortcut            | Description                                            |
+| ------------------- | ------------------------------------------------------ |
+| `⇪` + `<`           | Move window to top percentage of screen                |
+| `⇪` + `>`           | Move window to bottom percentage of screen             |
+| `⇪` + `shift` + `<` | Move window to opposite of top percentage of screen    |
+| `⇪` + `shift` + `>` | Move window to opposite of bottom percentage of screen |
+
 ### Expand
 
 > ⚠️ This doesn't toggle...
