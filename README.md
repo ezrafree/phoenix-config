@@ -81,8 +81,12 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 ### Quadrant Corners
 
-| Shortcut  | Description                            |
-| --------- | -------------------------------------- |
+| Shortcut        | Description                            |
+| --------------- | -------------------------------------- |
+| `⇪` + `↑` + `←` | Move window to the top-left corner     |
+| `⇪` + `↑` + `→` | Move window to the top-right corner    |
+| `⇪` + `↓` + `←` | Move window to the bottom-left corner  |
+| `⇪` + `↓` + `→` | Move window to the bottom-right corner |
 | `⇪` + `e` | Move window to the top-left corner     |
 | `⇪` + `r` | Move window to the top-right corner    |
 | `⇪` + `d` | Move window to the bottom-left corner  |
@@ -99,6 +103,8 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 ### Expand
 
+> ⚠️ This doesn't toggle...
+
 | Shortcut      | Description                               |
 | ------------- | ----------------------------------------- |
 | `⇪` + `space` | Toggle window expansion to fill the space |
@@ -114,15 +120,17 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 | Shortcut      | Description                                |
 | ------------- | ------------------------------------------ |
-| `⇪` + `left`  | Move focused window to screen on the left  |
-| `⇪` + `right` | Move focused window to screen on the right |
+| `⇪` + `←`  | Move focused window to screen on the left  |
+| `⇪` + `→` | Move focused window to screen on the right |
 
 ### Move Window to Space
+
+> ⚠️ Not working...
 
 | Shortcut  | Description                           |
 | --------- | ------------------------------------- |
 | `⇪` + `q` | Move focused window to previous space |
-| `⇪` + `w` | Move focused window to next space    |
+| `⇪` + `w` | Move focused window to next space     |
 
 > Please note: Uncheck "Automatically rearrange Spaces based on most recent use" in `System Preferences > Mission Control` to enable this feature.
 
