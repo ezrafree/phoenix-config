@@ -148,22 +148,25 @@ Key.on('f', hyper, function () {
   layoutWindow(0.5, 0.5, 0.5, 0.5)
 })
 
-// Center window
-Key.on('x', hyper, function () {
-  centerCurrentWindow()
-})
+// Center the window; double-tap (within DOUBLE_KEY_INTERVAL) to also resize it
+// to WINDOW_WIDTH x WINDOW_HEIGHT
+let lastCenterTimestamp = 0
+Key.on('c', hyperShift, function () {
+  const timestamp = Date.now()
+  const isDoubleTap = timestamp - lastCenterTimestamp <= DOUBLE_KEY_INTERVAL
+  lastCenterTimestamp = isDoubleTap ? 0 : timestamp
 
-// Center and resize window
-Key.on('x', hyperShift, function () {
-  const window = Window.focused()
-  if (!window) return
-  const frame = window.frame()
-  window.setFrame({
-    x: frame.x,
-    y: frame.y,
-    width: WINDOW_WIDTH,
-    height: WINDOW_HEIGHT,
-  })
+  if (isDoubleTap) {
+    const window = Window.focused()
+    if (!window) return
+    const frame = window.frame()
+    window.setFrame({
+      x: frame.x,
+      y: frame.y,
+      width: WINDOW_WIDTH,
+      height: WINDOW_HEIGHT,
+    })
+  }
   centerCurrentWindow()
 })
 

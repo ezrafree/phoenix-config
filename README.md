@@ -121,10 +121,12 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 ### Center
 
-| Shortcut            | Description                  |
-| ------------------- | ---------------------------- |
-| `⇪` + `x`           | Center the window            |
-| `⇪` + `shift` + `x` | Center and resize the window |
+| Shortcut                 | Description                  |
+| ------------------------ | ---------------------------- |
+| `⇪` + `shift` + `c`      | Center the window            |
+| `⇪` + `shift` + `c`, `c` | Center and resize the window |
+
+> Double-tap `c` (within `DOUBLE_KEY_INTERVAL`) to also resize the window.
 
 ### Move Window to Screen
 
