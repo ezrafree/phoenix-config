@@ -112,11 +112,18 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 ### Expand
 
-> ⚠️ This doesn't toggle...
+> ⚠️ `⇪` + `space` doesn't toggle...it only expands. Is it supposed to actually toggle? I need to review the code.
 
 | Shortcut      | Description                               |
 | ------------- | ----------------------------------------- |
 | `⇪` + `space` | Toggle window expansion to fill the space |
+
+### Resize
+
+| Shortcut  | Description                  |
+| --------- | ---------------------------- |
+| `⇪` + `-` | Center the window            |
+| `⇪` + `+` | Center and resize the window |
 
 ### Center
 
