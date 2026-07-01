@@ -14,7 +14,7 @@ brew install --cask phoenix
 
 Allow Phoenix in your system preferences
 
-<kbd>System Preferences</kbd> &raquo; <kbd>Security & Privacy</kbd> &raquo; <kbd>Accessibility</kbd>
+> System Preferences → Security & Privacy → Accessibility
 
 ### Install Karabiner
 
@@ -68,61 +68,61 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 ## Usage
 
-> Please note: `✦` is referred to as your "hyper" key. By default this is set to the CAPS LOCK key, but can be modified to your preferences.
+> Please note: By default the `hyper` key is the <kbd>CAPS LOCK</kbd> key, remapped to send <kbd>control</kbd> + <kbd>option</kbd> + <kbd>command</kbd>. This can be changed to your preference.
 
 ### Halves
 
 | Shortcut            | Description                             |
 | ------------------- | --------------------------------------- |
-| `✦` + `shift` + `↑` | Move window to the top half of screen   |
-| `✦` + `shift` + `→` | Move window to the right half of screen |
-| `✦` + `shift` + `↓` | Move window to the bottom half          |
-| `✦` + `shift` + `←` | Move window to the left half            |
+| `hyper` + `shift` + `↑` | Move window to the top half of screen   |
+| `hyper` + `shift` + `→` | Move window to the right half of screen |
+| `hyper` + `shift` + `↓` | Move window to the bottom half          |
+| `hyper` + `shift` + `←` | Move window to the left half            |
 
 ### Quadrant Corners
 
 | Shortcut        | Description                            |
 | --------------- | -------------------------------------- |
-| `✦` + `e` | Move window to the top-left corner     |
-| `✦` + `r` | Move window to the top-right corner    |
-| `✦` + `a` | Move window to the bottom-left corner  |
-| `✦` + `s` | Move window to the bottom-right corner |
+| `hyper` + `e` | Move window to the top-left corner     |
+| `hyper` + `r` | Move window to the top-right corner    |
+| `hyper` + `a` | Move window to the bottom-left corner  |
+| `hyper` + `s` | Move window to the bottom-right corner |
 
 ### Percentage Sides
 
 | Shortcut            | Description                                           |
 | ------------------- | ----------------------------------------------------- |
-| `✦` + `[`           | Move window to left percentage of screen              |
-| `✦` + `d`           | Move window to right percentage of screen             |
-| `✦` + `fhift` + `[` | Move window to opposite of left percentage of screen  |
-| `✦` + `shift` + `]` | Move window to opposite of right percentage of screen |
+| `hyper` + `[`           | Move window to left percentage of screen              |
+| `hyper` + `d`           | Move window to right percentage of screen             |
+| `hyper` + `shift` + `[` | Move window to opposite of left percentage of screen  |
+| `hyper` + `shift` + `]` | Move window to opposite of right percentage of screen |
 
 ### Percentage Top/Bottom
 
 | Shortcut  | Description                                |
 | --------- | ------------------------------------------ |
-| `✦` + `↑` | Move window to top percentage of screen    |
-| `✦` + `↓` | Move window to bottom percentage of screen |
+| `hyper` + `↑` | Move window to top percentage of screen    |
+| `hyper` + `↓` | Move window to bottom percentage of screen |
 
 ### Maximize Window
 
 | Shortcut      | Description                               |
 | ------------- | ----------------------------------------- |
-| `✦` + `space` | Maximize current window.   |
+| `hyper` + `space` | Maximize current window.   |
 
 ### Resize Window
 
 | Shortcut  | Description                  |
 | --------- | ---------------------------- |
-| `✦` + `-` | Make the window smaller      |
-| `✦` + `+` | Make the window bigger.      |
+| `hyper` + `-` | Make the window smaller      |
+| `hyper` + `+` | Make the window bigger.      |
 
 ### Center
 
 | Shortcut                 | Description                  |
 | ------------------------ | ---------------------------- |
-| `✦` + `shift` + `c`      | Center the window            |
-| `✦` + `shift` + `c`, `c` | Center and resize the window |
+| `hyper` + `shift` + `c`      | Center the window            |
+| `hyper` + `shift` + `c`, `c` | Center and resize the window |
 
 > Double-tap `c` (within `DOUBLE_KEY_INTERVAL`) to also resize the window.
 
@@ -130,8 +130,8 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 | Shortcut      | Description                                |
 | ------------- | ------------------------------------------ |
-| `✦` + `←`  | Move focused window to screen on the left  |
-| `✦` + `→` | Move focused window to screen on the right |
+| `hyper` + `←`  | Move focused window to screen on the left  |
+| `hyper` + `→` | Move focused window to screen on the right |
 
 ### Move Window to Space
 
@@ -139,8 +139,8 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 | Shortcut  | Description                           |
 | --------- | ------------------------------------- |
-| `✦` + `e` | Move focused window to previous space |
-| `✦` + `r` | Move focused window to next space     |
+| `hyper` + `e` | Move focused window to previous space |
+| `hyper` + `r` | Move focused window to next space     |
 
 > Please note: Uncheck "Automatically rearrange Spaces based on most recent use" in `System Preferences > Mission Control` to enable this feature.
 
@@ -148,32 +148,32 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 | Shortcut  | Description                         |
 | --------- | ----------------------------------- |
-| `✦` + `d` | Move mouse focus to previous screen |
-| `✦` + `f` | Move mouse focus to next screen     |
+| `hyper` + `d` | Move mouse focus to previous screen |
+| `hyper` + `f` | Move mouse focus to next screen     |
 
 ## Move Mouse Focus to Center of Screen
 
 | Shortcut                | Description                          |
 | ----------------------- | ------------------------------------ |
-| `✦` + `shift` + `space` | Move mouse focus to center of screen |
+| `hyper` + `shift` + `space` | Move mouse focus to center of screen |
 
 ### Focus Window in Current Screen
 
 | Shortcut              | Description                             |
 | --------------------- | --------------------------------------- |
-| `✦` + `tab`           | Focus next window in current screen     |
-| `✦` + `shift` + `tab` | Focus previous window in current screen |
+| `hyper` + `tab`           | Focus next window in current screen     |
+| `hyper` + `shift` + `tab` | Focus previous window in current screen |
 
 ### App Shortcuts
 
 | Shortcut  | Description         |
 | --------- | ------------------- |
-| `✦` + `1` | Open app shortcut 1 |
-| `✦` + `2` | Open app shortcut 2 |
-| `✦` + `3` | Open app shortcut 3 |
-| `✦` + `4` | Open app shortcut 4 |
-| `✦` + `5` | Open app shortcut 5 |
-| `✦` + `6` | Open app shortcut 6 |
+| `hyper` + `1` | Open app shortcut 1 |
+| `hyper` + `2` | Open app shortcut 2 |
+| `hyper` + `3` | Open app shortcut 3 |
+| `hyper` + `4` | Open app shortcut 4 |
+| `hyper` + `5` | Open app shortcut 5 |
+| `hyper` + `6` | Open app shortcut 6 |
 
 > You can configure which apps these shortcuts open in the config file. To disable any of them, just set it to an empty string.
 
