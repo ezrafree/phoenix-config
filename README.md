@@ -50,7 +50,7 @@ Make a copy of the example config
 cd ~/.config/phoenix/config && cp example.config.js config.js
 ```
 
-Now you can make any changes to `config.js` to configure.
+Now you can make any changes to `config.js` to configure. Any constant you delete or comment out in `config.js` falls back to the default in `config/defaults.js`.
 
 ## Debugging
 

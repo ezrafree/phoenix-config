@@ -4,6 +4,7 @@
 
 // configure
 require('./config/config.js')
+require('./config/defaults.js')
 Phoenix.set({
   daemon: PHOENIX_DAEMON,
   openAtLogin: PHOENIX_OPEN_AT_LOGIN,
