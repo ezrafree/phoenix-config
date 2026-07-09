@@ -3,32 +3,35 @@
  */
 
 // Launch apps
-if (APP_SHORTCUT_1 && APP_SHORTCUT_1 !== '') {
+// typeof guards keep a missing APP_SHORTCUT_* constant (removed or commented
+// out in config.js) from throwing a ReferenceError that would prevent every
+// keybinding below from registering
+if (typeof APP_SHORTCUT_1 !== 'undefined' && APP_SHORTCUT_1) {
   Key.on('1', hyper, function () {
     callApp(APP_SHORTCUT_1)
   })
 }
-if (APP_SHORTCUT_2 && APP_SHORTCUT_2 !== '') {
+if (typeof APP_SHORTCUT_2 !== 'undefined' && APP_SHORTCUT_2) {
   Key.on('2', hyper, function () {
     callApp(APP_SHORTCUT_2)
   })
 }
-if (APP_SHORTCUT_3 && APP_SHORTCUT_3 !== '') {
+if (typeof APP_SHORTCUT_3 !== 'undefined' && APP_SHORTCUT_3) {
   Key.on('3', hyper, function () {
     callApp(APP_SHORTCUT_3)
   })
 }
-if (APP_SHORTCUT_4 && APP_SHORTCUT_4 !== '') {
+if (typeof APP_SHORTCUT_4 !== 'undefined' && APP_SHORTCUT_4) {
   Key.on('4', hyper, function () {
     callApp(APP_SHORTCUT_4)
   })
 }
-if (APP_SHORTCUT_5 && APP_SHORTCUT_5 !== '') {
+if (typeof APP_SHORTCUT_5 !== 'undefined' && APP_SHORTCUT_5) {
   Key.on('5', hyper, function () {
     callApp(APP_SHORTCUT_5)
   })
 }
-if (APP_SHORTCUT_6 && APP_SHORTCUT_6 !== '') {
+if (typeof APP_SHORTCUT_6 !== 'undefined' && APP_SHORTCUT_6) {
   Key.on('6', hyper, function () {
     callApp(APP_SHORTCUT_6)
   })
