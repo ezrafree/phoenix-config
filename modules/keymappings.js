@@ -7,35 +7,46 @@
 // out in config.js) from throwing a ReferenceError that would prevent every
 // keybinding below from registering
 if (typeof APP_SHORTCUT_1 !== 'undefined' && APP_SHORTCUT_1) {
-  Key.on('1', hyper, function () {
+  Key.on('1', hyperShift, function () {
     callApp(APP_SHORTCUT_1)
   })
 }
 if (typeof APP_SHORTCUT_2 !== 'undefined' && APP_SHORTCUT_2) {
-  Key.on('2', hyper, function () {
+  Key.on('2', hyperShift, function () {
     callApp(APP_SHORTCUT_2)
   })
 }
 if (typeof APP_SHORTCUT_3 !== 'undefined' && APP_SHORTCUT_3) {
-  Key.on('3', hyper, function () {
+  Key.on('3', hyperShift, function () {
     callApp(APP_SHORTCUT_3)
   })
 }
 if (typeof APP_SHORTCUT_4 !== 'undefined' && APP_SHORTCUT_4) {
-  Key.on('4', hyper, function () {
+  Key.on('4', hyperShift, function () {
     callApp(APP_SHORTCUT_4)
   })
 }
 if (typeof APP_SHORTCUT_5 !== 'undefined' && APP_SHORTCUT_5) {
-  Key.on('5', hyper, function () {
+  Key.on('5', hyperShift, function () {
     callApp(APP_SHORTCUT_5)
   })
 }
 if (typeof APP_SHORTCUT_6 !== 'undefined' && APP_SHORTCUT_6) {
-  Key.on('6', hyper, function () {
+  Key.on('6', hyperShift, function () {
     callApp(APP_SHORTCUT_6)
   })
 }
+
+// Resize window to vertical thirds of screen (full width)
+Key.on('1', hyper, function () {
+  layoutWindow(0, 0, 1, 1 / 3)
+})
+Key.on('2', hyper, function () {
+  layoutWindow(0, 1 / 3, 1, 1 / 3)
+})
+Key.on('3', hyper, function () {
+  layoutWindow(0, 2 / 3, 1, 1 / 3)
+})
 
 // Focus mouse to next screen
 Key.on('d', hyper, function () {

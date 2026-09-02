@@ -104,6 +104,16 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 | `hyper` + `↑` | Move window to top percentage of screen    |
 | `hyper` + `↓` | Move window to bottom percentage of screen |
 
+### Vertical Thirds
+
+Full-width bands at a third of the screen height each, intended for vertically oriented monitors.
+
+| Shortcut      | Description                             |
+| ------------- | --------------------------------------- |
+| `hyper` + `1` | Move window to top third of screen      |
+| `hyper` + `2` | Move window to middle third of screen   |
+| `hyper` + `3` | Move window to bottom third of screen   |
+
 ### Maximize Window
 
 | Shortcut      | Description                               |
@@ -166,14 +176,14 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 ### App Shortcuts
 
-| Shortcut  | Description         |
-| --------- | ------------------- |
-| `hyper` + `1` | Open app shortcut 1 |
-| `hyper` + `2` | Open app shortcut 2 |
-| `hyper` + `3` | Open app shortcut 3 |
-| `hyper` + `4` | Open app shortcut 4 |
-| `hyper` + `5` | Open app shortcut 5 |
-| `hyper` + `6` | Open app shortcut 6 |
+| Shortcut              | Description         |
+| --------------------- | ------------------- |
+| `hyper` + `shift` + `1` | Open app shortcut 1 |
+| `hyper` + `shift` + `2` | Open app shortcut 2 |
+| `hyper` + `shift` + `3` | Open app shortcut 3 |
+| `hyper` + `shift` + `4` | Open app shortcut 4 |
+| `hyper` + `shift` + `5` | Open app shortcut 5 |
+| `hyper` + `shift` + `6` | Open app shortcut 6 |
 
 > You can configure which apps these shortcuts open in the config file. To disable any of them, just set it to an empty string.
 
