@@ -5,31 +5,32 @@
 if (DEBUG_MODE === true) {
   function dumpWindows(prefix, app) {
     const windows = app.windows().map((win, idx) => `${idx}: ${win.title()}`)
-    Phoenix.log(`DEBUG ${prefix} ${app.name()}: ${JSON.stringify(windows)}`)
+    debugLog(`${prefix} ${app.name()}: ${JSON.stringify(windows)}`)
   }
 
   // triggered when an app has activated
   Event.on('appDidActivate', app => {
-    dumpWindows('ACTIVATE', JSON.stringify(app, null, 2))
+    dumpWindows('appDidActivate', app)
   })
 
   // triggered when an app has launched
   Event.on('appDidLaunch', app => {
-    Phoenix.log('appDidLaunch', JSON.stringify(app, null, 2))
+    debugLog(`appDidLaunch ${app.name()}`)
   })
 
   // triggered when an app has terminated
   Event.on('appDidTerminate', app => {
-    Phoenix.log('appDidTerminate', JSON.stringify(app, null, 2))
+    debugLog(`appDidTerminate ${app.name()}`)
   })
 
   // triggered when screens (i.e. displays) are added, removed, or dynamically reconfigured
-  Event.on('screensDidChange', screens => {
-    Phoenix.log('screensDidChange', typeof screens)
+  Event.on('screensDidChange', () => {
+    const frames = Screen.all().map(screen => JSON.stringify(screen.frame()))
+    debugLog(`screensDidChange ${frames.join(' ')}`)
   })
 
   // triggered when the active space has changed
-  Event.on('spaceDidChange', spaces => {
-    Phoenix.log('spaceDidChange', spaces)
+  Event.on('spaceDidChange', () => {
+    debugLog(`spaceDidChange ${Space.active().hash()}`)
   })
 }

@@ -54,17 +54,19 @@ Now you can make any changes to `config.js` to configure. Any constant you delet
 
 ## Debugging
 
-If you run into problems, or when developing new features, you can follow the logs with:
+If you run into problems, or when developing new features, set `DEBUG_MODE = true` in `config.js`. This logs app, screen, and space events, which you can follow with:
 
 ```sh
-log stream --process Phoenix
+tail -f ~/Library/Logs/Phoenix-debug.log
 ```
 
-When developing, to log objects use `JSON.stringify()` with `Phoenix.log()`
+When developing, log your own messages with `debugLog()`, using `JSON.stringify()` for objects. These are only written while `DEBUG_MODE` is enabled.
 
 ```js
-Phoenix.log('foo: ' + JSON.stringify(foo))
+debugLog('foo: ' + JSON.stringify(foo))
 ```
+
+> `log stream --process Phoenix` still shows that Phoenix is logging, but macOS redacts the messages as `<private>`.
 
 ## Usage
 

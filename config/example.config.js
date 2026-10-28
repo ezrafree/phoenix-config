@@ -32,7 +32,7 @@ const APP_SHORTCUT_5 = 'Figma'
 const APP_SHORTCUT_6 = 'GIPHY Capture'
 // const APP_SHORTCUT_X = 'Slack'
 
-// Enabling debug mode sends debugging information to the log messages. You can
-// see the logs by running the following command:
-// $ log stream --process Phoenix
+// Enabling debug mode logs app, screen, and space events, plus any debugLog()
+// calls. You can follow the output by running the following command:
+// $ tail -f ~/Library/Logs/Phoenix-debug.log
 DEBUG_MODE = false
