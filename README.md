@@ -83,8 +83,8 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 
 | Shortcut        | Description                            |
 | --------------- | -------------------------------------- |
-| `hyper` + `e` | Move window to the top-left corner     |
-| `hyper` + `r` | Move window to the top-right corner    |
+| `hyper` + `q` | Move window to the top-left corner     |
+| `hyper` + `w` | Move window to the top-right corner    |
 | `hyper` + `a` | Move window to the bottom-left corner  |
 | `hyper` + `s` | Move window to the bottom-right corner |
 
@@ -93,7 +93,7 @@ Phoenix.log('foo: ' + JSON.stringify(foo))
 | Shortcut            | Description                                           |
 | ------------------- | ----------------------------------------------------- |
 | `hyper` + `[`           | Move window to left percentage of screen              |
-| `hyper` + `d`           | Move window to right percentage of screen             |
+| `hyper` + `]`           | Move window to right percentage of screen             |
 | `hyper` + `shift` + `[` | Move window to opposite of left percentage of screen  |
 | `hyper` + `shift` + `]` | Move window to opposite of right percentage of screen |
 
@@ -147,8 +147,8 @@ Full-width bands at a third of the screen height each, intended for vertically o
 
 | Shortcut  | Description                         |
 | --------- | ----------------------------------- |
-| `hyper` + `d` | Move mouse focus to previous screen |
-| `hyper` + `f` | Move mouse focus to next screen     |
+| `hyper` + `d` | Move mouse focus to next screen     |
+| `hyper` + `f` | Move mouse focus to previous screen |
 
 ## Move Mouse Focus to Center of Screen
 
