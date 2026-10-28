@@ -66,15 +66,6 @@ Key.on('left', hyper, function () {
   moveToPreviousScreen()
 })
 
-// Move current window to next space
-Key.on('r', hyper, function () {
-  moveToNextSpace()
-})
-// Move current window to previous space
-Key.on('e', hyper, function () {
-  moveToPreviousSpace()
-})
-
 // Window maximize
 Key.on('x', hyperShift, function () {
   maximizeCurrentWindow()

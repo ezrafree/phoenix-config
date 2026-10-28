@@ -143,17 +143,6 @@ Full-width bands at a third of the screen height each, intended for vertically o
 | `hyper` + `←`  | Move focused window to screen on the left  |
 | `hyper` + `→` | Move focused window to screen on the right |
 
-### Move Window to Space
-
-> ⚠️ Not working on desktop... possibly this only works when there's only one screen.
-
-| Shortcut  | Description                           |
-| --------- | ------------------------------------- |
-| `hyper` + `e` | Move focused window to previous space |
-| `hyper` + `r` | Move focused window to next space     |
-
-> Please note: Uncheck "Automatically rearrange Spaces based on most recent use" in `System Preferences > Mission Control` to enable this feature.
-
 ### Move Mouse Focus to Screen
 
 | Shortcut  | Description                         |
