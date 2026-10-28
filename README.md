@@ -191,3 +191,9 @@ For development purposes, you may optionally install the node modules to enable 
 ```sh
 yarn
 ```
+
+Then lint the project with:
+
+```sh
+yarn lint
+```
