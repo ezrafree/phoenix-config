@@ -76,7 +76,7 @@ Key.on('e', hyper, function () {
 })
 
 // Window maximize
-Key.on('space', hyper, function () {
+Key.on('x', hyperShift, function () {
   maximizeCurrentWindow()
 })
 // Window smaller
