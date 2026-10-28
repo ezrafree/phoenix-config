@@ -48,13 +48,13 @@ Key.on('3', hyper, function () {
   layoutWindow(0, 2 / 3, 1, 1 / 3)
 })
 
-// Focus mouse to next screen
-Key.on('d', hyper, function () {
-  focusOnNextScreen()
-})
 // Focus mouse to previous screen
-Key.on('f', hyper, function () {
+Key.on('d', hyper, function () {
   focusOnPreviousScreen()
+})
+// Focus mouse to next screen
+Key.on('f', hyper, function () {
+  focusOnNextScreen()
 })
 
 // Move current window to next screen (right)

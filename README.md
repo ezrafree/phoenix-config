@@ -149,8 +149,8 @@ Full-width bands at a third of the screen height each, intended for vertically o
 
 | Shortcut  | Description                         |
 | --------- | ----------------------------------- |
-| `hyper` + `d` | Move mouse focus to next screen     |
-| `hyper` + `f` | Move mouse focus to previous screen |
+| `hyper` + `d` | Move mouse focus to previous screen |
+| `hyper` + `f` | Move mouse focus to next screen     |
 
 ## Move Mouse Focus to Center of Screen
 
