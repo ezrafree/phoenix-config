@@ -93,7 +93,9 @@ function focusAnotherScreen(window, targetScreen) {
 }
 
 function getScreensSortedByX() {
-  return Screen.all().sort((a, b) => a.flippedVisibleFrame().x - b.flippedVisibleFrame().x)
+  return Screen.all().sort(
+    (a, b) => a.flippedVisibleFrame().x - b.flippedVisibleFrame().x
+  )
 }
 
 function focusOnNextScreen() {
@@ -113,7 +115,8 @@ function focusOnPreviousScreen() {
 
   var screens = getScreensSortedByX()
   var currentIndex = screens.findIndex(s => s === window.screen())
-  var targetScreen = screens[(currentIndex - 1 + screens.length) % screens.length]
+  var targetScreen =
+    screens[(currentIndex - 1 + screens.length) % screens.length]
 
   focusAnotherScreen(window, targetScreen)
 }
