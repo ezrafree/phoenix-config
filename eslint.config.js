@@ -6,6 +6,7 @@ const fs = require('fs')
 const path = require('path')
 const js = require('@eslint/js')
 const prettier = require('eslint-config-prettier')
+const prettierPlugin = require('eslint-plugin-prettier')
 
 // Phoenix's API, plus the lodash build it bundles
 const phoenixGlobals = {
@@ -51,6 +52,7 @@ module.exports = [
   prettier,
   {
     files: ['**/*.js'],
+    plugins: { prettier: prettierPlugin },
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'script',
@@ -67,6 +69,7 @@ module.exports = [
       eqeqeq: ['error', 'always'],
       'no-console': ['error', { allow: ['warn', 'error'] }],
       'object-shorthand': ['error', 'always'],
+      'prettier/prettier': 'error',
     },
   },
   {
