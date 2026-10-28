@@ -120,7 +120,7 @@ Full-width bands at a third of the screen height each, intended for vertically o
 
 | Shortcut      | Description                               |
 | ------------- | ----------------------------------------- |
-| `hyper` + `shift` + `x` | Maximize current window.   |
+| `hyper` + `e` | Maximize current window ("expand") |
 
 ### Resize Window
 
