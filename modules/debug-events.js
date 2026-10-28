@@ -4,24 +4,22 @@
 
 if (DEBUG_MODE === true) {
   function dumpWindows(prefix, app) {
-    const windows = app
-      .windows()
-      .map((win, idx, all) => `${idx}: ${win.title()}`)
+    const windows = app.windows().map((win, idx) => `${idx}: ${win.title()}`)
     Phoenix.log(`DEBUG ${prefix} ${app.name()}: ${JSON.stringify(windows)}`)
   }
 
   // triggered when an app has activated
-  Event.on('appDidActivate', (app, win) => {
+  Event.on('appDidActivate', app => {
     dumpWindows('ACTIVATE', JSON.stringify(app, null, 2))
   })
 
   // triggered when an app has launched
-  Event.on('appDidLaunch', (app, win) => {
+  Event.on('appDidLaunch', app => {
     Phoenix.log('appDidLaunch', JSON.stringify(app, null, 2))
   })
 
   // triggered when an app has terminated
-  Event.on('appDidTerminate', (app, win) => {
+  Event.on('appDidTerminate', app => {
     Phoenix.log('appDidTerminate', JSON.stringify(app, null, 2))
   })
 
